@@ -1,0 +1,1338 @@
+{
+  "latest_date": "2026-02-12",
+  "etl_runs": [
+    {
+      "slug": "modern",
+      "label": "Pasar Modern",
+      "min_date": "2022-01-01",
+      "max_date": "2026-02-12",
+      "raw_rows": 1493,
+      "calendar_days": 1504,
+      "rows_long": 9024,
+      "rows_imputed": 66,
+      "rows_anomaly": 12
+    },
+    {
+      "slug": "tradisional",
+      "label": "Pasar Tradisional",
+      "min_date": "2022-01-01",
+      "max_date": "2026-02-12",
+      "raw_rows": 1415,
+      "calendar_days": 1504,
+      "rows_long": 9024,
+      "rows_imputed": 534,
+      "rows_anomaly": 1
+    },
+    {
+      "slug": "produsen",
+      "label": "Tingkat Produsen",
+      "min_date": "2022-01-01",
+      "max_date": "2026-02-12",
+      "raw_rows": 1493,
+      "calendar_days": 1504,
+      "rows_long": 9024,
+      "rows_imputed": 66,
+      "rows_anomaly": 27
+    }
+  ],
+  "latest_by_segment": {
+    "modern": [
+      {
+        "province": "Sulawesi Barat",
+        "price_idr": 14300,
+        "pct_7d": 0.0,
+        "pct_30d": -1.72,
+        "change_days": 80,
+        "spark_90d": [
+          14550,
+          14550,
+          14550,
+          14550,
+          14550,
+          14550,
+          14550,
+          14550,
+          14550,
+          14550,
+          14550,
+          14550,
+          14550,
+          14550,
+          14550,
+          14550,
+          14550,
+          14550,
+          14550,
+          14550,
+          14300,
+          14300,
+          14400,
+          14300,
+          14300,
+          14300,
+          14300,
+          14300,
+          14300,
+          14300
+        ]
+      },
+      {
+        "province": "Sulawesi Selatan",
+        "price_idr": 14950,
+        "pct_7d": 0.0,
+        "pct_30d": 0.0,
+        "change_days": 32,
+        "spark_90d": [
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950,
+          14950
+        ]
+      },
+      {
+        "province": "Sulawesi Utara",
+        "price_idr": 15450,
+        "pct_7d": -0.32,
+        "pct_30d": -0.64,
+        "change_days": 104,
+        "spark_90d": [
+          16050,
+          16050,
+          16050,
+          16050,
+          15650,
+          15650,
+          15650,
+          15650,
+          15650,
+          15650,
+          15650,
+          15600,
+          15600,
+          15600,
+          15600,
+          15600,
+          15600,
+          15600,
+          15550,
+          15550,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15450
+        ]
+      },
+      {
+        "province": "Sulawesi Tenggara",
+        "price_idr": 15750,
+        "pct_7d": 0.0,
+        "pct_30d": 4.65,
+        "change_days": 13,
+        "spark_90d": [
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15050,
+          15750,
+          15750,
+          15750,
+          15750,
+          15750
+        ]
+      },
+      {
+        "province": "Gorontalo",
+        "price_idr": 16750,
+        "pct_7d": 0.0,
+        "pct_30d": 0.6,
+        "change_days": 69,
+        "spark_90d": [
+          17450,
+          17450,
+          17450,
+          17450,
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          16650,
+          16650,
+          16700,
+          16700,
+          16700,
+          16650,
+          16650,
+          16650,
+          16650,
+          16750,
+          16750,
+          16750,
+          16750,
+          16750,
+          16750,
+          16750,
+          16750,
+          16750,
+          16750
+        ]
+      },
+      {
+        "province": "Sulawesi Tengah",
+        "price_idr": 17700,
+        "pct_7d": 0.0,
+        "pct_30d": 1.43,
+        "change_days": 56,
+        "spark_90d": [
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          17200,
+          17450,
+          17450,
+          17450,
+          17450,
+          17450,
+          17700,
+          17700,
+          17700,
+          17700,
+          17700,
+          17700,
+          17700
+        ]
+      }
+    ],
+    "tradisional": [
+      {
+        "province": "Sulawesi Selatan",
+        "price_idr": 14250,
+        "pct_7d": 0.0,
+        "pct_30d": 0.71,
+        "change_days": 142,
+        "spark_90d": [
+          14150,
+          14150,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14150,
+          14150,
+          14150,
+          14150,
+          14150,
+          14200,
+          14200,
+          14200,
+          14200,
+          14200,
+          14250,
+          14250,
+          14250
+        ]
+      },
+      {
+        "province": "Sulawesi Barat",
+        "price_idr": 14350,
+        "pct_7d": 0.0,
+        "pct_30d": 0.0,
+        "change_days": 167,
+        "spark_90d": [
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14300,
+          14300,
+          14300,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350,
+          14350
+        ]
+      },
+      {
+        "province": "Sulawesi Utara",
+        "price_idr": 15000,
+        "pct_7d": 0.0,
+        "pct_30d": 0.0,
+        "change_days": 267,
+        "spark_90d": [
+          15850,
+          15850,
+          15550,
+          15150,
+          15000,
+          14900,
+          14850,
+          14850,
+          14850,
+          14900,
+          14900,
+          14900,
+          14950,
+          14950,
+          14950,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          15000,
+          14950,
+          14950,
+          14950,
+          14950,
+          15050,
+          15000,
+          15000,
+          15000,
+          15000
+        ]
+      },
+      {
+        "province": "Sulawesi Tengah",
+        "price_idr": 15300,
+        "pct_7d": 0.0,
+        "pct_30d": -0.33,
+        "change_days": 165,
+        "spark_90d": [
+          15600,
+          15600,
+          15500,
+          15500,
+          15400,
+          15400,
+          15400,
+          15400,
+          15400,
+          15400,
+          15400,
+          15400,
+          15400,
+          15400,
+          15400,
+          15350,
+          15350,
+          15350,
+          15350,
+          15350,
+          15350,
+          15350,
+          15350,
+          15350,
+          15300,
+          15300,
+          15300,
+          15300,
+          15300,
+          15300
+        ]
+      },
+      {
+        "province": "Gorontalo",
+        "price_idr": 15350,
+        "pct_7d": 0.99,
+        "pct_30d": 0.66,
+        "change_days": 255,
+        "spark_90d": [
+          16000,
+          15900,
+          15650,
+          15600,
+          15650,
+          15650,
+          15650,
+          15650,
+          15650,
+          15650,
+          15550,
+          15500,
+          15500,
+          15450,
+          15450,
+          15500,
+          15350,
+          15350,
+          15350,
+          15350,
+          15250,
+          15250,
+          15200,
+          15300,
+          15100,
+          15100,
+          15200,
+          15200,
+          15200,
+          15350
+        ]
+      },
+      {
+        "province": "Sulawesi Tenggara",
+        "price_idr": 15450,
+        "pct_7d": 0.0,
+        "pct_30d": -0.32,
+        "change_days": 153,
+        "spark_90d": [
+          15600,
+          15600,
+          15600,
+          15600,
+          15600,
+          15600,
+          15600,
+          15550,
+          15550,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15500,
+          15450,
+          15450
+        ]
+      }
+    ],
+    "produsen": [
+      {
+        "province": "Sulawesi Tengah",
+        "price_idr": 12450,
+        "pct_7d": 0.0,
+        "pct_30d": 0.81,
+        "change_days": 61,
+        "spark_90d": [
+          13300,
+          13300,
+          13300,
+          13300,
+          12350,
+          12350,
+          12350,
+          12350,
+          12350,
+          12350,
+          12350,
+          12350,
+          12350,
+          12350,
+          12350,
+          12350,
+          12350,
+          12350,
+          12350,
+          12350,
+          12350,
+          12350,
+          12350,
+          12350,
+          12450,
+          12450,
+          12450,
+          12450,
+          12450,
+          12450
+        ]
+      },
+      {
+        "province": "Sulawesi Utara",
+        "price_idr": 13100,
+        "pct_7d": 0.0,
+        "pct_30d": 3.15,
+        "change_days": 48,
+        "spark_90d": [
+          13900,
+          13900,
+          13900,
+          13900,
+          13050,
+          13050,
+          13050,
+          13050,
+          13050,
+          13050,
+          13050,
+          13050,
+          13050,
+          12700,
+          12700,
+          12700,
+          12700,
+          12700,
+          12700,
+          12700,
+          12700,
+          12700,
+          12700,
+          13100,
+          13100,
+          13100,
+          13100,
+          13100,
+          13100,
+          13100
+        ]
+      },
+      {
+        "province": "Sulawesi Barat",
+        "price_idr": 13150,
+        "pct_7d": 0.0,
+        "pct_30d": 0.0,
+        "change_days": 30,
+        "spark_90d": [
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150,
+          13150
+        ]
+      },
+      {
+        "province": "Gorontalo",
+        "price_idr": 13400,
+        "pct_7d": 0.0,
+        "pct_30d": -1.83,
+        "change_days": 47,
+        "spark_90d": [
+          14650,
+          14650,
+          14650,
+          13900,
+          13900,
+          13900,
+          13900,
+          13900,
+          13900,
+          13900,
+          13900,
+          13900,
+          13900,
+          13650,
+          13650,
+          13650,
+          13650,
+          13650,
+          13650,
+          13650,
+          13650,
+          13650,
+          13650,
+          13400,
+          13400,
+          13400,
+          13400,
+          13400,
+          13400,
+          13400
+        ]
+      },
+      {
+        "province": "Sulawesi Tenggara",
+        "price_idr": 13800,
+        "pct_7d": 0.0,
+        "pct_30d": 1.1,
+        "change_days": 42,
+        "spark_90d": [
+          13450,
+          13450,
+          13450,
+          13450,
+          13600,
+          13600,
+          13600,
+          13600,
+          13600,
+          13600,
+          13600,
+          13600,
+          13600,
+          13600,
+          13650,
+          13650,
+          13650,
+          13650,
+          13650,
+          13650,
+          13650,
+          13650,
+          13650,
+          13650,
+          13800,
+          13800,
+          13800,
+          13800,
+          13800,
+          13800
+        ]
+      },
+      {
+        "province": "Sulawesi Selatan",
+        "price_idr": 14200,
+        "pct_7d": 0.0,
+        "pct_30d": 0.71,
+        "change_days": 27,
+        "spark_90d": [
+          14150,
+          14150,
+          14150,
+          14150,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14100,
+          14200,
+          14200,
+          14200,
+          14200,
+          14200,
+          14200
+        ]
+      }
+    ]
+  },
+  "margin_table_2026_02_12": [
+    {
+      "province": "Sulawesi Tengah",
+      "produsen_idr": 12450,
+      "tradisional_idr": 15300,
+      "modern_idr": 17700,
+      "spread_idr": 5250,
+      "spread_pct": 42.2
+    },
+    {
+      "province": "Gorontalo",
+      "produsen_idr": 13400,
+      "tradisional_idr": 15350,
+      "modern_idr": 16750,
+      "spread_idr": 3350,
+      "spread_pct": 25.0
+    },
+    {
+      "province": "Sulawesi Utara",
+      "produsen_idr": 13100,
+      "tradisional_idr": 15000,
+      "modern_idr": 15450,
+      "spread_idr": 2350,
+      "spread_pct": 17.9
+    },
+    {
+      "province": "Sulawesi Tenggara",
+      "produsen_idr": 13800,
+      "tradisional_idr": 15450,
+      "modern_idr": 15750,
+      "spread_idr": 1950,
+      "spread_pct": 14.1
+    },
+    {
+      "province": "Sulawesi Barat",
+      "produsen_idr": 13150,
+      "tradisional_idr": 14350,
+      "modern_idr": 14300,
+      "spread_idr": 1150,
+      "spread_pct": 8.7
+    },
+    {
+      "province": "Sulawesi Selatan",
+      "produsen_idr": 14200,
+      "tradisional_idr": 14250,
+      "modern_idr": 14950,
+      "spread_idr": 750,
+      "spread_pct": 5.3
+    }
+  ],
+  "modern_monthly_trend_12m": {
+    "Sulawesi Tengah": [
+      {
+        "label": "2025-03",
+        "price": 16771
+      },
+      {
+        "label": "2025-04",
+        "price": 16700
+      },
+      {
+        "label": "2025-05",
+        "price": 16700
+      },
+      {
+        "label": "2025-06",
+        "price": 16732
+      },
+      {
+        "label": "2025-07",
+        "price": 16837
+      },
+      {
+        "label": "2025-08",
+        "price": 17161
+      },
+      {
+        "label": "2025-09",
+        "price": 17135
+      },
+      {
+        "label": "2025-10",
+        "price": 17166
+      },
+      {
+        "label": "2025-11",
+        "price": 17200
+      },
+      {
+        "label": "2025-12",
+        "price": 17200
+      },
+      {
+        "label": "2026-01",
+        "price": 17490
+      },
+      {
+        "label": "2026-02",
+        "price": 17700
+      }
+    ],
+    "Gorontalo": [
+      {
+        "label": "2025-03",
+        "price": 15850
+      },
+      {
+        "label": "2025-04",
+        "price": 15950
+      },
+      {
+        "label": "2025-05",
+        "price": 16050
+      },
+      {
+        "label": "2025-06",
+        "price": 16040
+      },
+      {
+        "label": "2025-07",
+        "price": 16306
+      },
+      {
+        "label": "2025-08",
+        "price": 16671
+      },
+      {
+        "label": "2025-09",
+        "price": 16915
+      },
+      {
+        "label": "2025-10",
+        "price": 17498
+      },
+      {
+        "label": "2025-11",
+        "price": 17475
+      },
+      {
+        "label": "2025-12",
+        "price": 16945
+      },
+      {
+        "label": "2026-01",
+        "price": 16708
+      },
+      {
+        "label": "2026-02",
+        "price": 16750
+      }
+    ],
+    "Sulawesi Selatan": [
+      {
+        "label": "2025-03",
+        "price": 14950
+      },
+      {
+        "label": "2025-04",
+        "price": 14950
+      },
+      {
+        "label": "2025-05",
+        "price": 14950
+      },
+      {
+        "label": "2025-06",
+        "price": 14950
+      },
+      {
+        "label": "2025-07",
+        "price": 14950
+      },
+      {
+        "label": "2025-08",
+        "price": 14950
+      },
+      {
+        "label": "2025-09",
+        "price": 14950
+      },
+      {
+        "label": "2025-10",
+        "price": 14950
+      },
+      {
+        "label": "2025-11",
+        "price": 14950
+      },
+      {
+        "label": "2025-12",
+        "price": 14950
+      },
+      {
+        "label": "2026-01",
+        "price": 14950
+      },
+      {
+        "label": "2026-02",
+        "price": 14950
+      }
+    ],
+    "Sulawesi Barat": [
+      {
+        "label": "2025-03",
+        "price": 13500
+      },
+      {
+        "label": "2025-04",
+        "price": 13523
+      },
+      {
+        "label": "2025-05",
+        "price": 13782
+      },
+      {
+        "label": "2025-06",
+        "price": 14363
+      },
+      {
+        "label": "2025-07",
+        "price": 15032
+      },
+      {
+        "label": "2025-08",
+        "price": 14994
+      },
+      {
+        "label": "2025-09",
+        "price": 14620
+      },
+      {
+        "label": "2025-10",
+        "price": 14531
+      },
+      {
+        "label": "2025-11",
+        "price": 14530
+      },
+      {
+        "label": "2025-12",
+        "price": 14550
+      },
+      {
+        "label": "2026-01",
+        "price": 14411
+      },
+      {
+        "label": "2026-02",
+        "price": 14308
+      }
+    ]
+  },
+  "sulsel_modern_weekly_16w": [
+    {
+      "week": "2025-10-27",
+      "price": 14950
+    },
+    {
+      "week": "2025-11-03",
+      "price": 14950
+    },
+    {
+      "week": "2025-11-10",
+      "price": 14950
+    },
+    {
+      "week": "2025-11-17",
+      "price": 14950
+    },
+    {
+      "week": "2025-11-24",
+      "price": 14950
+    },
+    {
+      "week": "2025-12-01",
+      "price": 14950
+    },
+    {
+      "week": "2025-12-08",
+      "price": 14950
+    },
+    {
+      "week": "2025-12-15",
+      "price": 14950
+    },
+    {
+      "week": "2025-12-22",
+      "price": 14950
+    },
+    {
+      "week": "2025-12-29",
+      "price": 14950
+    },
+    {
+      "week": "2026-01-05",
+      "price": 14950
+    },
+    {
+      "week": "2026-01-12",
+      "price": 14950
+    },
+    {
+      "week": "2026-01-19",
+      "price": 14950
+    },
+    {
+      "week": "2026-01-26",
+      "price": 14950
+    },
+    {
+      "week": "2026-02-02",
+      "price": 14950
+    },
+    {
+      "week": "2026-02-09",
+      "price": 14950
+    }
+  ],
+  "sulsel_modern_forecasts_4w": {
+    "moving_average_4w": {
+      "eval_mae": 3.65,
+      "eval_mape": 0.02,
+      "points": [
+        {
+          "step_week": 1,
+          "target_date": "2026-02-19",
+          "predicted_idr": 14950,
+          "lower_idr": 14786,
+          "upper_idr": 15114,
+          "eval_mae": 3.65,
+          "eval_mape": 0.02
+        },
+        {
+          "step_week": 2,
+          "target_date": "2026-02-26",
+          "predicted_idr": 14950,
+          "lower_idr": 14786,
+          "upper_idr": 15114,
+          "eval_mae": 3.65,
+          "eval_mape": 0.02
+        },
+        {
+          "step_week": 3,
+          "target_date": "2026-03-05",
+          "predicted_idr": 14950,
+          "lower_idr": 14786,
+          "upper_idr": 15114,
+          "eval_mae": 3.65,
+          "eval_mape": 0.02
+        },
+        {
+          "step_week": 4,
+          "target_date": "2026-03-12",
+          "predicted_idr": 14950,
+          "lower_idr": 14786,
+          "upper_idr": 15114,
+          "eval_mae": 3.65,
+          "eval_mape": 0.02
+        }
+      ]
+    },
+    "seasonal_naive": {
+      "eval_mae": 220.13,
+      "eval_mape": 1.47,
+      "points": [
+        {
+          "step_week": 1,
+          "target_date": "2026-02-19",
+          "predicted_idr": 14950,
+          "lower_idr": 14281,
+          "upper_idr": 15619,
+          "eval_mae": 220.13,
+          "eval_mape": 1.47
+        },
+        {
+          "step_week": 2,
+          "target_date": "2026-02-26",
+          "predicted_idr": 14950,
+          "lower_idr": 14319,
+          "upper_idr": 15581,
+          "eval_mae": 220.13,
+          "eval_mape": 1.47
+        },
+        {
+          "step_week": 3,
+          "target_date": "2026-03-05",
+          "predicted_idr": 14950,
+          "lower_idr": 14359,
+          "upper_idr": 15541,
+          "eval_mae": 220.13,
+          "eval_mape": 1.47
+        },
+        {
+          "step_week": 4,
+          "target_date": "2026-03-12",
+          "predicted_idr": 14950,
+          "lower_idr": 14403,
+          "upper_idr": 15497,
+          "eval_mae": 220.13,
+          "eval_mape": 1.47
+        }
+      ]
+    },
+    "arima_110": {
+      "eval_mae": 2.23,
+      "eval_mape": 0.01,
+      "points": [
+        {
+          "step_week": 1,
+          "target_date": "2026-02-19",
+          "predicted_idr": 14950,
+          "lower_idr": 14786,
+          "upper_idr": 15114,
+          "eval_mae": 2.23,
+          "eval_mape": 0.01
+        },
+        {
+          "step_week": 2,
+          "target_date": "2026-02-26",
+          "predicted_idr": 14950,
+          "lower_idr": 14786,
+          "upper_idr": 15114,
+          "eval_mae": 2.23,
+          "eval_mape": 0.01
+        },
+        {
+          "step_week": 3,
+          "target_date": "2026-03-05",
+          "predicted_idr": 14950,
+          "lower_idr": 14786,
+          "upper_idr": 15114,
+          "eval_mae": 2.23,
+          "eval_mape": 0.01
+        },
+        {
+          "step_week": 4,
+          "target_date": "2026-03-12",
+          "predicted_idr": 14950,
+          "lower_idr": 14786,
+          "upper_idr": 15114,
+          "eval_mae": 2.23,
+          "eval_mape": 0.01
+        }
+      ]
+    }
+  },
+  "modern_imputed_dates_r3": [
+    {
+      "price_date": "2025-03-30",
+      "sulsel_idr": 14950,
+      "sulteng_idr": 16700
+    },
+    {
+      "price_date": "2025-01-19",
+      "sulsel_idr": 14900,
+      "sulteng_idr": 16850
+    },
+    {
+      "price_date": "2025-01-18",
+      "sulsel_idr": 14900,
+      "sulteng_idr": 16850
+    },
+    {
+      "price_date": "2024-04-21",
+      "sulsel_idr": 14550,
+      "sulteng_idr": 14300
+    },
+    {
+      "price_date": "2024-04-20",
+      "sulsel_idr": 14550,
+      "sulteng_idr": 14300
+    },
+    {
+      "price_date": "2024-04-14",
+      "sulsel_idr": 14550,
+      "sulteng_idr": 14300
+    },
+    {
+      "price_date": "2024-04-13",
+      "sulsel_idr": 14550,
+      "sulteng_idr": 14300
+    },
+    {
+      "price_date": "2023-11-05",
+      "sulsel_idr": 13900,
+      "sulteng_idr": 15000
+    },
+    {
+      "price_date": "2023-11-04",
+      "sulsel_idr": 13900,
+      "sulteng_idr": 15000
+    },
+    {
+      "price_date": "2023-08-06",
+      "sulsel_idr": 13350,
+      "sulteng_idr": 15000
+    },
+    {
+      "price_date": "2023-08-05",
+      "sulsel_idr": 13350,
+      "sulteng_idr": 15000
+    }
+  ],
+  "modern_anomalies_r5": [
+    {
+      "price_date": "2024-09-04",
+      "province": "Sulawesi Utara",
+      "price_idr": 14350,
+      "pct_change_daily": -10.8696,
+      "anomaly_status": "perlu_verifikasi"
+    },
+    {
+      "price_date": "2024-06-12",
+      "province": "Gorontalo",
+      "price_idr": 16200,
+      "pct_change_daily": -16.4948,
+      "anomaly_status": "perlu_verifikasi"
+    },
+    {
+      "price_date": "2024-05-22",
+      "province": "Sulawesi Tengah",
+      "price_idr": 15950,
+      "pct_change_daily": 12.7208,
+      "anomaly_status": "perlu_verifikasi"
+    },
+    {
+      "price_date": "2024-03-28",
+      "province": "Sulawesi Tengah",
+      "price_idr": 14150,
+      "pct_change_daily": -10.443,
+      "anomaly_status": "perlu_verifikasi"
+    },
+    {
+      "price_date": "2024-03-06",
+      "province": "Gorontalo",
+      "price_idr": 19800,
+      "pct_change_daily": 12.1813,
+      "anomaly_status": "perlu_verifikasi"
+    },
+    {
+      "price_date": "2024-01-03",
+      "province": "Gorontalo",
+      "price_idr": 17800,
+      "pct_change_daily": 11.5987,
+      "anomaly_status": "perlu_verifikasi"
+    },
+    {
+      "price_date": "2023-11-01",
+      "province": "Sulawesi Tenggara",
+      "price_idr": 14600,
+      "pct_change_daily": -24.9357,
+      "anomaly_status": "perlu_verifikasi"
+    },
+    {
+      "price_date": "2023-05-10",
+      "province": "Gorontalo",
+      "price_idr": 17450,
+      "pct_change_daily": 15.1815,
+      "anomaly_status": "perlu_verifikasi"
+    },
+    {
+      "price_date": "2023-01-03",
+      "province": "Sulawesi Selatan",
+      "price_idr": 12650,
+      "pct_change_daily": -12.4567,
+      "anomaly_status": "perlu_verifikasi"
+    },
+    {
+      "price_date": "2022-06-14",
+      "province": "Sulawesi Selatan",
+      "price_idr": 14450,
+      "pct_change_daily": 14.2292,
+      "anomaly_status": "perlu_verifikasi"
+    },
+    {
+      "price_date": "2022-05-31",
+      "province": "Sulawesi Selatan",
+      "price_idr": 12650,
+      "pct_change_daily": -12.4567,
+      "anomaly_status": "perlu_verifikasi"
+    },
+    {
+      "price_date": "2022-03-01",
+      "province": "Sulawesi Selatan",
+      "price_idr": 14450,
+      "pct_change_daily": -11.0769,
+      "anomaly_status": "perlu_verifikasi"
+    }
+  ]
+}
