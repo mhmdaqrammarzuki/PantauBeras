@@ -1,0 +1,73 @@
+# Pantau Beras Sulawesi
+
+Aplikasi pemantauan, analisis spasial, dan proyeksi harga beras harian di 6 provinsi Pulau Sulawesi (Sulawesi Utara, Sulawesi Tengah, Sulawesi Selatan, Sulawesi Tenggara, Gorontalo, dan Sulawesi Barat).
+
+## Ringkasan Sistem
+
+- **Sumber Data:** Pusat Informasi Harga Pangan Strategis (PIHPS) Bank Indonesia, mencakup 1.504 hari kalender (`2022-01-01` s/d `2026-02-12`) pada 3 kanal pasar: Pasar Modern, Pasar Tradisional, dan Tingkat Produsen.
+- **Total Observasi:** 27.072 baris terverifikasi (`3 kanal x 6 provinsi x 1.504 tanggal`).
+- **Mesin Proyeksi:** Evaluasi deret waktu mingguan (horizon 4 minggu dan 8 minggu) menggunakan perbandingan 3 model (Seasonal Naive, Moving Average, dan Holt-Winters Additive) lengkap dengan rentang prediksi 90% serta metrik kesalahan (MAE dan MAPE).
+- **Antarmuka Web:** Buletin Indeks Pangan Sulawesi dengan tipografi `Plus Jakarta Sans` dan `JetBrains Mono`, mode terang/gelap terkalibrasi WCAG AA, peta koroplet SVG Sulawesi, serta perbandingan lintas kanal pasar.
+
+## Struktur Direktori
+
+```text
+.
+├── DESIGN.md                       # Spesifikasi sistem desain Buletin Indeks Pangan Sulawesi
+├── anti-slop/
+│   └── audit-001-2026-11-19.md     # Laporan audit desain, kontras, dan kualitas kode
+├── backend/
+│   └── server.py                   # Server HTTP REST API + penyaji berkas statis
+├── data/
+│   ├── pantau_beras.db             # Basis data SQLite terindeks (observasi, statistik, proyeksi)
+│   ├── processed/                  # Ekspor CSV format wide dan long per kanal pasar
+│   ├── raw/archive.zip             # Arsip dataset mentah PIHPS
+│   └── verified_figma_snapshot.json
+├── pipeline/
+│   ├── schema.sql                  # Skema tabel dan indeks SQLite
+│   ├── etl.py                      # Pipeline ekstraksi, pembersihan, dan normalisasi data
+│   └── forecast.py                 # Mesin proyeksi deret waktu dan evaluasi metrik
+├── tests/
+│   ├── test_pipeline.py            # Pengujian integritas ETL dan proyeksi
+│   └── test_api.py                 # Pengujian endpoint REST API dan ekspor CSV
+└── web/
+    ├── index.html                  # Antarmuka aplikasi web utama
+    ├── js/                         # Modul klien API, peta SVG Sulawesi, grafik SVG, dan state
+    └── styles/                     # Token warna/tipografi, tata letak responsif, dan komponen
+```
+
+## Cara Menjalankan
+
+Pastikan Python 3.10+ telah terpasang. Proyek ini menggunakan pustaka standar Python tanpa ketergantungan eksternal tambahan.
+
+### 1. Menjalankan Pipeline ETL dan Proyeksi (Opsional, basis data sudah tersedia)
+
+```bash
+python3 pipeline/etl.py
+python3 pipeline/forecast.py
+```
+
+### 2. Menjalankan Server Aplikasi dan API
+
+```bash
+PORT=8765 python3 backend/server.py
+```
+
+Buka `http://127.0.0.1:8765` di peramban untuk mengakses antarmuka Pantau Beras Sulawesi.
+
+### 3. Menjalankan Pengujian Otomatis
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
+## Endpoint REST API Utama
+
+- `GET /api/health`: Status kesehatan server dan koneksi basis data.
+- `GET /api/meta`: Metadata cakupan tanggal, daftar provinsi, dan ringkasan eksekusi ETL.
+- `GET /api/overview?segment=modern&date=YYYY-MM-DD`: Ringkasan harga regional, disparitas provinsi, dan tren 90 hari terakhir.
+- `GET /api/trends?segment=modern&provinces=Sulawesi+Tengah&granularity=daily`: Deret waktu historis harian, mingguan, atau bulanan.
+- `GET /api/compare?date=YYYY-MM-DD`: Perbandingan harga dan selisih margin antara Tingkat Produsen, Pasar Tradisional, dan Pasar Modern.
+- `GET /api/forecasts?segment=modern&province=Sulawesi+Tengah&horizon=4`: Proyeksi harga mingguan beserta evaluasi MAE dan MAPE ketiga model.
+- `GET /api/quality?segment=modern`: Ringkasan hari tanpa laporan dan deteksi lonjakan harga harian >10%.
+- `GET /api/export?segment=modern&schema=long&format=csv`: Pratinjau dan unduh data terfilter dalam format CSV atau JSON.
